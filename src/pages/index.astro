@@ -1,16 +1,53 @@
 ---
-
+	import Main from "../layouts/Main.astro";
+	const profile_picture = "https://i.pinimg.com/550x/2b/b9/73/2bb973e9f4bb59092a1a20e125be7781.jpg";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Main>
+	<div class="profile">
+		<img 
+			alt="Harshk's Website" 
+			width="100px"
+			height="100px"
+			class="profile_picture"
+			src={profile_picture}
+		/>
+	<div class="profile_detials">
+		<h1>Harshk</h1>
+		<p>Unveiling the past, Mastering the present, and Shaping the future</p>
+	</div>
+	</div>
+</Main>
+
+<style>
+			
+	@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+	*{
+		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
+		font-family: "Tilt Neon", sans-serif;
+	}
+
+	.profile{
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		padding: 1rem 0 3rem 0;
+	}
+	
+	.profile_detials{
+		flex: 1 0 300px;
+	}
+
+	.profile_detials > h1 {
+		margin-top: 0;
+	}
+
+	.profile_picture{
+		border-radius: 20%;
+		margin: 0 2rem 1rem 0;
+	}
+	
+</style>
