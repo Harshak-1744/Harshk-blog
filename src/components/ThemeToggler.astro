@@ -82,7 +82,17 @@
 
   if(toggle) {
     toggle.addEventListener("click", () => {
+    const currentMode = rootEl.classList.contains(DARK_THEME_CLASS) ? DARK_THEME : LIGHT_THEME;
+    const newMode = currentMode === DARK_THEME ? LIGHT_THEME : DARK_THEME;
 
-    })
+    if (newMode === DARK_THEME) {
+        rootEl.classList.add(DARK_THEME_CLASS);
+    } else {
+        rootEl.classList.remove(DARK_THEME_CLASS);
+    }
+
+    window.localStorage.setItem(COLOUR_MODE, newMode);
+});
+
   }
   </script>
