@@ -47,8 +47,7 @@
 </style>
 
 <script>
-    import { titleCase } from "title-case"; 
-
+    
     const DARK_THEME_CLASS = "dark";
     const COLOUR_MODE = "COLOUR_MODE";
     const LIGHT_THEME = "LIGHT";
@@ -67,20 +66,17 @@
       return DARK_THEME;
     }
     return LIGHT_THEME;};
-  const initialColourMode = getInitialColourMode();
-
-  const title = titleCase(`The Theme of the user is ${initialColourMode}`)
-
-  alert(title)
-
-  const setInitialColourMode = (mode: string) => {
+    
+    const initialColourMode = getInitialColourMode();
+    const setInitialColourMode = (mode: string) => {
 
     if (mode === LIGHT_THEME) {
       rootEl.classList.remove(DARK_THEME_CLASS);
-    } else {
+    } 
+    else {
       rootEl.classList.add(DARK_THEME_CLASS);
     }
-  };
+};
 
   setInitialColourMode(initialColourMode);
 
