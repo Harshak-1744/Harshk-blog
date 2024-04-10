@@ -47,7 +47,7 @@
 </style>
 
 <script>
-    import { titleCase } from "title-case";
+    import { titleCase } from "title-case"; 
 
     const DARK_THEME_CLASS = "dark";
     const COLOUR_MODE = "COLOUR_MODE";
@@ -68,6 +68,10 @@
     }
     return LIGHT_THEME;};
   const initialColourMode = getInitialColourMode();
+
+  const title = titleCase(`The Theme of the user is ${initialColourMode}`)
+
+  alert(title)
 
   const setInitialColourMode = (mode: string) => {
 
