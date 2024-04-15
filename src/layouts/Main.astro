@@ -20,6 +20,20 @@
     		const DARK_THEME = "DARK";
 			
 			const rootEl = document.documentElement;
+
+			const getInitialColourMode = () => {
+   
+   const previouslySavedColourMode = window.localStorage.getItem(COLOUR_MODE);
+   if (previouslySavedColourMode) {
+	 return previouslySavedColourMode;
+   }
+   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+	 return DARK_THEME;
+   }
+   return LIGHT_THEME;
+ };
+
+			const initialColourMode = getInitialColourMode();
 		</script>
 	
 	</head>
