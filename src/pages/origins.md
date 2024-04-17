@@ -1,3 +1,8 @@
+--- 
+    layout: ../layouts/Main.astro
+---
+
+
 - Origin of Music
 - Origin of Language
 - Origin of Medicine 
