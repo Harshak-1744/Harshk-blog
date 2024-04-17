@@ -2,7 +2,7 @@
     layout: ../layouts/Blog.astro
     title: "The Origins"
     subtitle: "Origins: Uncover the Roots, Discover the Truth"
-    poster: 
+    poster: "/images/OP.jpg"
 ---
 
 
