@@ -1,5 +1,6 @@
 ---
 	import Main from "../layouts/Main.astro";
+	import Cards from "../components/Cards.astro";
 	const profile_picture = "https://i.pinimg.com/550x/2b/b9/73/2bb973e9f4bb59092a1a20e125be7781.jpg";
 ---
 
@@ -18,6 +19,28 @@
 		<p>Unveiling the past, Mastering the present, and Shaping the future</p>
 	</div>
 	</div>
+
+	<Cards cards={[
+		{
+			title: "Origins: Uncover the Roots, Discover the Truth",
+			gradientFrom: "#818cf8",
+			gradientTo: "#d8b4fe",
+			to: "/origins", 
+		},
+		{
+			title: "Beyond The Algorithm: Exploring the Mechanics of Intelligence",
+			gradientFrom: "#fde68a",
+			gradientTo: "#fca5a5",
+			to: "/beyond-algo", 
+		},
+		{
+			title: "A summary of my work history",
+			gradientFrom: "#6ee7b7",
+			gradientTo: "#9333ea",
+			to: "/work-summary", 
+		},
+
+	]}/>
 </Main>
 
 <style>
