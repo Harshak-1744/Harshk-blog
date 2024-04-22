@@ -1,11 +1,11 @@
 ---
 layout: "../../layouts/Blog.astro"
-poster: "/images/adventure.jpg"
-title: "Why Rust is the Future of Javascript Tooling"
-subtitle: "How to create fast, speedy developer experiences."
+poster: "../src/images/cars.jpg"
+title: "The Future of Transportation: Autonomous Cars"
+subtitle: "Exploring the Speed and Efficiency of Self-Driving Technology"
 ---
 
-- Rust is fast
-- Yes, it is fast
-- Touted as the new C++
-- Did I mention it's pretty fast?
+- The fundamentals of autonomous car technology
+- Speed and safety: How self-driving cars outpace human drivers
+- Autonomous cars as the next evolution in automotive technology
+- The impact of autonomous vehicles on traffic, safety, and urban planning
