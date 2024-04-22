@@ -1,11 +1,11 @@
 ---
 layout: "../../layouts/Blog.astro"
 poster: "../src/images/music.png"
-title: "Why Rust is the Future of Javascript Tooling"
-subtitle: "How to create fast, speedy developer experiences."
+title: "Exploring the Origins of Music"
+subtitle: "A Journey Through the History and Evolution of Musical Forms"
 ---
 
-- Rust is fast
-- Yes, it is fast
-- Touted as the new C++
-- Did I mention it's pretty fast?
+- Music's roots in ancient cultures
+- The role of music in ritual and communication
+- Evolution from traditional to classical forms
+- The influence of music on social and cultural movements
