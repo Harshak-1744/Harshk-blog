@@ -1,7 +1,11 @@
 ---
 	import Main from "../layouts/Main.astro";
 	import Cards from "../components/Cards.astro";
+
 	const profile_picture = "https://i.pinimg.com/550x/2b/b9/73/2bb973e9f4bb59092a1a20e125be7781.jpg";
+
+	const blogs = await Astro.glob("../pages/blogs/*.md")
+
 ---
 
 <Main title = "Harshk">
