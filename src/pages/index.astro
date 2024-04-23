@@ -4,8 +4,11 @@
 
 	const profile_picture = "https://i.pinimg.com/550x/2b/b9/73/2bb973e9f4bb59092a1a20e125be7781.jpg";
 
-	const blogs = await Astro.glob("../pages/blogs/*.md")
-
+	const blogs = await Astro.glob<{
+									poster: string;
+  									title: string;
+  									subtitle: string;
+									}>("../pages/blogs/*.md");
 ---
 
 <Main title = "Harshk">
@@ -52,25 +55,15 @@
     </p>
   </div>
 
-  <ol class="blogs">
-    <li class="blogs__list">
-      <a href="blogs/origin-of-music" class="blog__link"
-        >Origin of Music</a
-      >
-    </li>
-
-    <li class="blogs__list">
-      <a href="/blogs/understanding-machines" class="blog__link"
-        >Understanding Machines</a
-      >
-    </li>
-
-    <li class="blogs__list">
-      <a href="/blogs/autonomous-vehicles" class="blog__link"
-        >Autonomous Vehicles</a
-      >
-    </li>
-  </ol>
+  {
+	blogs.map((blog) => (
+	  <li class="blogs__list">
+		<a href={blog.url} class="blog__link">
+		  {blog.frontmatter.title}
+		</a>
+	  </li>
+	))
+  }
 </Main>
 
 <style>
